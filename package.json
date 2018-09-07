@@ -3,19 +3,30 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "ios": "react-native run-ios",
+    "android": "react-native run-android",
+    "server": "node_modules/nodemon/bin/nodemon.js -- node_modules/babel-cli/bin/babel-node.js ./backend/server.js"
   },
   "dependencies": {
     "react": "16.0.0-alpha.6",
     "react-native": "0.44.0",
     "react-native-safari-view": "^2.0.0",
-    "react-native-vector-icons": "^4.0.1"
+    "react-native-vector-icons": "^4.0.1",
+    "cookie-session": "^2.0.0-beta.1",
+    "express": "^4.15.2",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth20": "^1.0.0"
   },
   "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
     "babel-jest": "19.0.0",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-react-native": "1.9.1",
+    "babel-preset-stage-0": "^6.24.1",
     "jest": "19.0.2",
+    "nodemon": "^1.18.4",
     "react-test-renderer": "16.0.0-alpha.6"
   },
   "jest": {
