@@ -12,8 +12,11 @@ import { styles, iconStyles } from './src/styles'
 
 export default class App extends Component {
 
-    state = {
-        user: undefined, // user has not logged in yet
+    constructor() {
+        super()
+        this.state = {
+            user: undefined, // user has not logged in yet
+        }
     }
 
   // Set up Linking
@@ -76,7 +79,7 @@ export default class App extends Component {
                   ? // Show user info if already logged in
                     <View style={styles.content}>
                       <Text style={styles.header}>
-                        Welcome {user.name}!
+                        Welcome, {user.name}!{'\n\n'}or should we call{'\n'}you {user.screenName}?
                       </Text>
                       <View style={styles.avatar}>
                         <Image source={{ uri: user.avatar }} style={styles.avatarImage} />
@@ -93,25 +96,25 @@ export default class App extends Component {
                       <Text style={styles.text}>
                         Please log in to continue{'\n'}to the awesomness
                       </Text>
+                      {/* Login buttons */}
+                      <View style={styles.buttons}>
+                          <Icon.Button
+                              name="facebook"
+                              backgroundColor="#3b5998"
+                              onPress={this.loginWithFacebook}
+                              {...iconStyles} >
+                              Login with Facebook
+                          </Icon.Button>
+                          <Icon.Button
+                              name="google"
+                              backgroundColor="#DD4B39"
+                              onPress={this.loginWithGoogle}
+                              {...iconStyles} >
+                              Or with Google
+                          </Icon.Button>
+                      </View>
                     </View>
                 }
-                {/* Login buttons */}
-                <View style={styles.buttons}>
-                    <Icon.Button
-                        name="facebook"
-                        backgroundColor="#3b5998"
-                        onPress={this.loginWithFacebook}
-                        {...iconStyles} >
-                        Login with Facebook
-                    </Icon.Button>
-                    <Icon.Button
-                        name="google"
-                        backgroundColor="#DD4B39"
-                        onPress={this.loginWithGoogle}
-                        {...iconStyles} >
-                        Or with Google
-                    </Icon.Button>
-                </View>
             </View>
         )
     }
