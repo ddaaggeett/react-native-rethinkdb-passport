@@ -56,6 +56,9 @@ export default class App extends Component {
     // Handle Login with Google button tap
     loginWithGoogle = () => this.openURL('http://localhost:3000/auth/google')
 
+    // Handle Login with Github button tap
+    loginWithGithub = () => this.openURL('http://localhost:3000/auth/github')
+
     // Open URL in a browser
     openURL = (url) => {
         // Use SafariView on iOS
@@ -98,20 +101,33 @@ export default class App extends Component {
                       </Text>
                       {/* Login buttons */}
                       <View style={styles.buttons}>
-                          <Icon.Button
+                          <View
+                              style={styles.login_button}
+                              ><Icon.Button
                               name="facebook"
                               backgroundColor="#3b5998"
                               onPress={this.loginWithFacebook}
                               {...iconStyles} >
                               Login with Facebook
-                          </Icon.Button>
-                          <Icon.Button
+                          </Icon.Button></View>
+                          <View
+                              style={styles.login_button}
+                              ><Icon.Button
                               name="google"
                               backgroundColor="#DD4B39"
                               onPress={this.loginWithGoogle}
                               {...iconStyles} >
                               Or with Google
-                          </Icon.Button>
+                          </Icon.Button></View>
+                          <View
+                              style={styles.login_button}
+                              ><Icon.Button
+                              name="github"
+                              backgroundColor="gray"
+                              onPress={this.loginWithGithub}
+                              {...iconStyles} >
+                              Or with Github
+                          </Icon.Button></View>
                       </View>
                     </View>
                 }

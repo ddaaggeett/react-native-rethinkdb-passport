@@ -30,9 +30,12 @@ export const styles = StyleSheet.create({
     },
     buttons: {
         justifyContent: 'space-between',
-        flexDirection: 'row',
+        flexDirection: 'column',
         margin: 20,
         marginBottom: 30,
+    },
+    login_button: {
+        margin: 10,
     },
 })
 
