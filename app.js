@@ -82,7 +82,7 @@ export default class App extends Component {
                   ? // Show user info if already logged in
                     <View style={styles.content}>
                       <Text style={styles.header}>
-                        Welcome, {user.name}!{'\n\n'}or should we call{'\n'}you {user.screenName}?
+                        Welcome, {user.name}!{'\n\n'}or should we call{'\n'}you {user.username}?
                       </Text>
                       <View style={styles.avatar}>
                         <Image source={{ uri: user.avatar }} style={styles.avatarImage} />
@@ -101,7 +101,7 @@ export default class App extends Component {
                       </Text>
                       {/* Login buttons */}
                       <View style={styles.buttons}>
-                          <View
+                          {/*}<View
                               style={styles.login_button}
                               ><Icon.Button
                               name="facebook"
@@ -117,8 +117,8 @@ export default class App extends Component {
                               backgroundColor="#DD4B39"
                               onPress={this.loginWithGoogle}
                               {...iconStyles} >
-                              Or with Google
-                          </Icon.Button></View>
+                              Login with Google
+                          </Icon.Button></View>*/}
                           <View
                               style={styles.login_button}
                               ><Icon.Button
@@ -126,7 +126,7 @@ export default class App extends Component {
                               backgroundColor="gray"
                               onPress={this.loginWithGithub}
                               {...iconStyles} >
-                              Or with Github
+                              Login with Github
                           </Icon.Button></View>
                       </View>
                     </View>
