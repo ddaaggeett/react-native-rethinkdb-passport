@@ -10,3 +10,16 @@ export const google = {
     clientSecret: 'PASTE_CLIENT_SECRET_HERE',
     callbackURL: 'http://localhost:3000/auth/google/callback',
 };
+
+export const github = {
+    clientID: 'PASTE_CLIENT_ID_HERE',
+    clientSecret: 'PASTE_CLIENT_SECRET_HERE',
+    callbackURL: 'http://localhost:3000/auth/github/callback',
+};
+
+export const db_host = '127.0.0.1'
+export const db_port = 28015
+export const db = 'rnAuthTest'
+export const tables = {
+    "users": "users",
+}
