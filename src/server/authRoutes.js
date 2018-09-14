@@ -1,7 +1,7 @@
 import {
     app,
     passport,
-} from './server'
+} from '.'
 
 // Set up Facebook auth routes
 app.get('/auth/facebook', passport.authenticate('facebook'))

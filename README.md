@@ -1,8 +1,8 @@
-# Logging Into React Native Apps with Facebook/Google/GitHub and storing user sessions in RethinkDB
+## [Passport.JS](http://www.passportjs.org/) authentication for [React Native](https://facebook.github.io/react-native/) user account sessions stored with [RethinkDB](https://www.rethinkdb.com/)
 
-Learn how to log users into React Native apps via Facebook/Google/GitHub OAuth.
+    npm install
 
-make sure to **activate port forwarding** in your browser: ie - `chrome://inspect/#devices`
+make sure to **activate port forwarding** in your desktop browser to port **3000**: ie - [`chrome://inspect/#devices`](chrome://inspect/#devices)
 
     rethinkdb
 
@@ -12,16 +12,10 @@ make sure to **activate port forwarding** in your browser: ie - `chrome://inspec
     or
     npm run ios
 
-#### thanks to:
+## thanks to:
 
-[Konstantin Shkut](https://github.com/KonstantinShkut) for [demonstrating](https://github.com/rationalappdev/react-native-oauth-login-tutorial) how passport.js works with react native
-[Jorge Silva](https://github.com/thejsj) for [demonstrating](https://github.com/thejsj/passport-rethinkdb-tutorial) how passport.js works with rethinkDB
-
-## original tutorial
-
-Read the full tutorial [here](http://rationalappdev.com/logging-into-react-native-apps-with-facebook-or-google)
-
-in this repository, i decided to split up the workflow into a few separate files instead of a single `./backend/server.js` file
+- [Konstantin Shkut](https://github.com/KonstantinShkut) for [demonstrating](https://github.com/rationalappdev/react-native-oauth-login-tutorial) how passport.js works with react native. Read the full original tutorial [here](http://rationalappdev.com/logging-into-react-native-apps-with-facebook-or-google).
+- [Jorge Silva](https://github.com/thejsj) for [demonstrating](https://github.com/thejsj/passport-rethinkdb-tutorial) how passport.js works with rethinkDB. Read the full original tutorial [here](https://rethinkdb.com/blog/passport-oauth-with-rethinkdb/).
 
 ## Demo
 

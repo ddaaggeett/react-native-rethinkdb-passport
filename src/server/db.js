@@ -6,7 +6,7 @@ import {
 } from './config'
 import {
     server,
-} from './server'
+} from '.'
 var r = require('rethinkdb')
 var dbConnx = null
 var io = require('socket.io')(server, {pingTimeout: 1})

@@ -5,7 +5,7 @@
   "scripts": {
     "ios": "react-native run-ios",
     "android": "react-native run-android",
-    "server": "node_modules/nodemon/bin/nodemon.js -- node_modules/babel-cli/bin/babel-node.js ./backend/server.js"
+    "server": "node_modules/nodemon/bin/nodemon.js -- node_modules/babel-cli/bin/babel-node.js ./src/server"
   },
   "dependencies": {
     "express": "^4.16.3",

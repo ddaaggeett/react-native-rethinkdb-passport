@@ -9,7 +9,7 @@ import {
 } from './config'
 import {
     passport,
-} from './server'
+} from '.'
 import {
     r,
     dbConnx,
